@@ -21,8 +21,8 @@ static double GetLength(OwlInstance inst)
     ASSERT(prop);
 
     double* rval = NULL;
-    int_t card = -1;
-    if (0==GetDatatypeProperty(inst, prop, (void**)&rval, &card) && rval && card > 0) {
+    int64_t card = -1;
+    if (0==GetDatatypeProperty(inst, prop, (const void**)&rval, &card) && rval && card > 0) {
         return rval[0];
     }
 

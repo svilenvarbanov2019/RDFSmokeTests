@@ -25,8 +25,10 @@
 #include "CIS2.h"
 #include "AP242.h"
 
+#ifdef INJECTED_SMOKE_TESTS
 #define COMPILE_SMOKE_TESTS
 #include "SmokeTests.h"
+#endif
 
 #ifdef ASSERT
 #undef ASSERT

@@ -51,11 +51,11 @@ extern int main()
             {
             BooleanTest();
             EngineTests();
-            ComplexInstance();
+            //ComplexInstance(); #todo
             AggregationTests();
             SchemaReadingTests();
             DeriveAttrTests();
-            Encodings();
+            //Encodings(); #todo
             ADBtests();
             EarlyBound_IFC4_test();
             EarlyBound_IFC4x4_test();

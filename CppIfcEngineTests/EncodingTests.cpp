@@ -254,7 +254,7 @@ static void CheckRegionalChars(const char* stepFile, SdaiInteger stepId)
 //
 const int_t BLOCK_LENGTH_WRITE = 20000; //  no maximum limit
 static FILE* myFileWrite = nullptr;
-static void    __stdcall   WriteCallBackFunction(unsigned char* content, int64_t size)
+static void    __stdcall   WriteCallBackFunction(unsigned char* content, int_t size)
 {
     fwrite(content, (size_t)size, 1, myFileWrite);
 }
